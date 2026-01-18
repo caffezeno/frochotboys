@@ -5,182 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Art Exhibition</title>
   <meta name="description" content="Art exhibition landing page." />
-  <style>
-    * { box-sizing: border-box; }
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    body {
-      font-family: Helvetica, Arial, sans-serif;
-      background: #ffffff;
-      color: #000000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container {
-      text-align: center;
-      padding: 260px 24px 32px; /* more space before presenter line */
-      transform: translateY(-10px); /* optical centering */
-    }
-
-    .lang {
-      position: fixed;
-      top: 18px;
-      right: 18px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 12px;
-      letter-spacing: 0.14em;
-      user-select: none;
-    }
-
-    .menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 18px 24px;
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: blur(4px);
-      z-index: 10;
-    }
-    .menu-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      font-size: 12px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-    }
-    .menu-item {
-      text-decoration: none;
-      color: #000;
-      opacity: 0.65;
-    }
-    .menu-item:hover {
-      opacity: 1;
-      text-decoration: underline;
-      text-underline-offset: 6px;
-    }
-    .lang-btn {
-      appearance: none;
-      background: transparent;
-      border: 0;
-      padding: 6px 6px;
-      margin: 0;
-      cursor: pointer;
-      color: #000;
-      font: inherit;
-    }
-    .lang-btn[aria-pressed="true"] {
-      font-weight: 700;
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-    .lang-sep { opacity: 0.55; }
-    .title {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 44px;
-      font-weight: 700;
-      margin: 0 0 10px; /* reduced space below title */
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .presented-by {
-      font-size: 12px;
-      font-style: italic;
-      margin: 0 0 36px;
-      padding-top: 40px; /* extra space above presenter line */
-      letter-spacing: 0.04em;
-      text-decoration: underline;
-      text-underline-offset: 6px;
-      color: #666666; /* softer dark grey */
-    }
-    .subtitle {
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      margin: 0 0 36px; /* reduced space above body text */
-      letter-spacing: 0.10em;
-    }
-
-    .intro {
-      max-width: 68ch; /* wider text column */
-      margin: 0 auto 56px;
-      font-size: 14px;
-      line-height: 1.6;
-      letter-spacing: 0.02em;
-    }
-    .poster {
-      max-width: 39vw; /* 50% smaller */
-      max-height: 35vh; /* 50% smaller */
-      margin: 0 auto 48px;
-    }
-    .poster img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .poster object {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .poster img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .rsvp-link {
-      display: inline-block;
-      margin: 0 0 48px;
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: 0.18em;
-      text-decoration: underline;
-      text-underline-offset: 6px;
-      color: #000000;
-    }
-    .rsvp-link:hover {
-      text-decoration: underline;
-    }
-    .rsvp-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+<script src="lang.js"></script>
 <body>
-  <header class="menu" aria-label="Main navigation">
-    <nav class="menu-inner">
-      <a href="index.html" class="menu-item">Home</a>
-      <a href="artists.html" class="menu-item">Artists</a>
-      <a href="works.html" class="menu-item">Works</a>
-      <a href="press.html" class="menu-item">Press</a>
-      <a href="rsvp.html" class="menu-item">RSVP</a>
-    </nav>
-  </header>
-  <div class="lang" aria-label="Language">
-    <button type="button" class="lang-btn" data-lang="fr" aria-pressed="true">FR</button>
-    <span class="lang-sep">/</span>
-    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-  </div>
+<header class="menu" aria-label="Main navigation">
+  <nav class="menu-inner">
+    <div class="menu-left">
+      <a href="index.html" class="menu-item" data-i18n="home">Home</a>
+      <a href="artists.html" class="menu-item" data-i18n="artists">Artists</a>
+      <a href="works.html" class="menu-item" data-i18n="works">Works</a>
+      <a href="press.html" class="menu-item" data-i18n="press">Press</a>
+      <a href="rsvp.html" class="menu-item" data-i18n="rsvp">RSVP</a>
+    </div>
+
+    <div class="menu-right">
+      <button type="button" class="lang-btn" data-lang="fr" aria-pressed="true">FR</button>
+      <span class="lang-sep">/</span>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </nav>
+</header>
+
 
   <main class="container">
       <p class="presented-by">Le Pigalle presents</p>
     <h1 class="title">Les gars de Frochot</h1>
     <h2 id="subtitle" class="subtitle">art d'un collectif de quartier</h2>
 
-      <p class="intro">
-        a group exhibition exploring the renaissance of offline community, centered around a physical place.<br><br>
-        <strong>Central themes</strong>: Community around a physical place. Renaissance of community. Experiencing daily life. Rue Frochot, South Pigalle, Paris.
-      </p>
+      <p class="intro" data-i18n-block="intro"></p>
 
       <a class="rsvp-link" href="rsvp.html">RSVP</a>
     <div class="poster">
@@ -227,5 +80,6 @@
       btn.addEventListener('click', () => setLang(btn.dataset.lang));
     });
   </script>
+  <script src="lang.js"></script>
 </body>
 </html>
