@@ -2,31 +2,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const DICT = {
     en: {
       home: "Home",
+      subtitle: "group exhibition",
       artists: "Artists",
       works: "Works",
       press: "Press",
       rsvp: "RSVP",
       coming: "COMING SOON",
       intro: `
+Vernissage February 14th 2026<br><br>
 Hotel le Pigalle<br>
 9 rue Frochot<br>
 75009 Paris<br><br>
-Vernissage February 14th<br><br>
 <!-- <strong>Central themes</strong>: Community around a physical place. Renaissance of community. Experiencing daily life. Rue Frochot, South Pigalle, Paris. -->
       `
     },
     fr: {
       home: "Accueil",
+      subtitle: "exposition collective",
       artists: "Artistes",
       works: "Œuvres",
       press: "Presse",
       rsvp: "RSVP",
       coming: "BIENTÔT",
       intro: `
+Vernissage le 14 février 2026<br><br>
 Hôtel Le Pigalle<br>
 9 rue Frochot<br>
 75009 Paris<br><br>
-Vernissage le 14 février<br><br>
 <!--<strong>Thématiques centrales</strong> : communauté autour d’un lieu physique. Renaissance du lien collectif. Expérience du quotidien. Rue Frochot, South Pigalle, Paris. -->
       `
     }
