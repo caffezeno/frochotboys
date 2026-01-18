@@ -29,7 +29,7 @@ body {
   z-index: 10;
 }
 
-/* Updated layout: centered nav + language toggle on far right */
+/* Centered nav + language toggle on far right */
 .menu-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -97,7 +97,7 @@ body {
 /* ---------- Layout ---------- */
 main {
   text-align: center;
-  padding: 90px 24px 64px;
+  padding: 180px 24px 64px;
   max-width: 1100px;
   width: 100%;
 }
@@ -152,8 +152,8 @@ h1 {
 
 /* ---------- Poster ---------- */
 .poster {
-  max-width: 39vw;  /* 50% smaller than earlier */
-  max-height: 35vh; /* 50% smaller than earlier */
+  max-width: 39vw;  /* desktop size */
+  max-height: 35vh; /* desktop size */
   margin: 0 auto 48px;
 }
 
@@ -168,4 +168,62 @@ h1 {
   font-size: 14px;
   letter-spacing: 0.10em;
   margin: 0;
+}
+
+/* ---------- Mobile tuning ---------- */
+@media (max-width: 640px) {
+  .menu {
+    padding: 12px 14px;
+  }
+
+  .menu-inner {
+    gap: 10px;
+  }
+
+  .menu-left {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    line-height: 1.8;
+  }
+
+  .menu-right {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+
+  main {
+    padding: 120px 16px 48px;
+  }
+
+  .presented-by {
+    padding-top: 0;
+    margin: 0 0 22px;
+  }
+
+  h1 {
+    font-size: 34px;
+    letter-spacing: 0.04em;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin: 0 0 26px;
+  }
+
+  .intro {
+    max-width: 40ch;
+    font-size: 14px;
+    margin: 0 auto 40px;
+  }
+
+  .poster {
+    max-width: 86vw;
+    max-height: none;
+    margin: 0 auto 36px;
+  }
+
+  .rsvp-link {
+    margin: 0 0 36px;
+  }
 }
