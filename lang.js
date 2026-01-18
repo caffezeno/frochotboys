@@ -8,8 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
       rsvp: "RSVP",
       coming: "COMING SOON",
       intro: `
-a group exhibition exploring the renaissance of offline community, centered around a physical place.<br><br>
-<strong>Central themes</strong>: Community around a physical place. Renaissance of community. Experiencing daily life. Rue Frochot, South Pigalle, Paris.
+Hotel le Pigalle<br>
+9 rue Frochot<br>
+75009 Paris<br><br>
+Vernissage February 14th<br><br>
+<!-- <strong>Central themes</strong>: Community around a physical place. Renaissance of community. Experiencing daily life. Rue Frochot, South Pigalle, Paris. -->
       `
     },
     fr: {
@@ -20,8 +23,11 @@ a group exhibition exploring the renaissance of offline community, centered arou
       rsvp: "RSVP",
       coming: "BIENTÔT",
       intro: `
-une exposition collective explorant la renaissance des communautés hors ligne, centrée autour d’un lieu physique.<br><br>
-<strong>Thématiques centrales</strong> : communauté autour d’un lieu physique. Renaissance du lien collectif. Expérience du quotidien. Rue Frochot, South Pigalle, Paris.
+Hôtel Le Pigalle<br>
+9 rue Frochot<br>
+75009 Paris<br><br>
+Vernissage le 14 février<br><br>
+<!--<strong>Thématiques centrales</strong> : communauté autour d’un lieu physique. Renaissance du lien collectif. Expérience du quotidien. Rue Frochot, South Pigalle, Paris. -->
       `
     }
   };

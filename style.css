@@ -26,6 +26,7 @@ body {
   padding: 18px 24px;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* faint grey line */
   z-index: 10;
 }
 
@@ -116,10 +117,10 @@ main {
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 44px;
-  font-weight: 700;
+  font-size: 33px;
+  font-weight: 400;
   margin: 0 0 10px; /* tighter to tagline */
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
@@ -128,6 +129,7 @@ h1 {
   font-weight: 400;
   margin: 0 0 36px;
   letter-spacing: 0.10em;
+  text-transform: uppercase;
 }
 
 .intro {
@@ -142,7 +144,7 @@ h1 {
 .rsvp-link {
   display: inline-block;
   margin: 0 0 48px;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 14px;
   letter-spacing: 0.18em;
   text-decoration: underline;
@@ -170,6 +172,10 @@ h1 {
   margin: 0;
 }
 
+.text-block {
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+  outline-offset: 8px;
+}
 /* ---------- Mobile tuning ---------- */
 @media (max-width: 640px) {
   .menu {
@@ -227,3 +233,85 @@ h1 {
     margin: 0 0 36px;
   }
 }
+/* ---------- Landing carousel (horizontal) ---------- */
+.carousel {
+  width: 100%;
+  margin: 0 auto 56px;
+  position: relative;
+}
+
+.carousel-viewport {
+  width: 100%;
+  height: 68vh;            /* smaller, more editorial */
+  max-height: 620px;       /* prevents it from getting huge on large screens */
+  overflow: hidden;
+  padding: 0 18px;
+}
+
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  gap: 18px; /* space between slides */
+  transform: translateX(0);
+  transition: transform 500ms ease;
+}
+
+/* Each slide is slightly less than full width */
+.carousel-slide {
+  flex: 0 0 calc(100% - 650px); /* shows next slide a bit */
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* shows full image */
+  display: block;
+  background: #fff;        /* keeps the “mat” clean */
+}
+
+
+
+/* Minimal UI */
+.carousel-ui {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  display: flex;
+  gap: 12px;
+  z-index: 9;
+}
+
+.carousel-btn {
+  appearance: none;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 8px 12px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.carousel-btn:hover {
+  background: rgba(255,255,255,0.9);
+}
+/* ---------- Carousel progress bar ---------- */
+.carousel-progress {
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.08); /* faint track */
+  margin-top: 8px;
+  position: relative;
+}
+
+.carousel-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: rgba(0, 0, 0, 0.35); /* active indicator */
+  transition: width 400ms ease;
+}
+
+
+
