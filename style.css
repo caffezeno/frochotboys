@@ -313,5 +313,26 @@ h1 {
   transition: width 400ms ease;
 }
 
+.press-text {
+  padding: 80px 24px 120px;
+  max-width: 60ch;
+  margin: 0 auto;
+  text-align: left;
+}
+@media (max-width: 640px) {
+  .carousel-viewport {
+    height: 320px;   /* fixed height avoids mobile vh bugs */
+    min-height: 320px;
+  }
+  .carousel-slide {
+    height: 100%;
+  }
+  .carousel-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* or contain */
+  }
+}
+
 
 
