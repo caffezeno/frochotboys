@@ -9,12 +9,20 @@ document.addEventListener("DOMContentLoaded", () => {
       rsvp: "RSVP",
       coming: "COMING SOON",
       intro: `
-<u><b>Opening February 14th 2026</b></u><br><br>
+<u><b>Vernissage February 14th 2026</b></u><br><br>
 Hotel le Pigalle<br>
 9 rue Frochot<br>
 75009 Paris<br><br>
 <!-- <strong>Central themes</strong>: Community around a physical place. Renaissance of community. Experiencing daily life. Rue Frochot, South Pigalle, Paris. -->
-      `
+      `,
+      rsvp_title: "RSVP",
+      rsvp_subtitle: "Please fill in the form below.",
+      rsvp_name: "Name",
+      rsvp_email: "Email",
+      rsvp_guests: "Number of guests",
+      rsvp_note: "Note (optional)",
+      rsvp_submit: "Send"
+
     },
     fr: {
       home: "Accueil",
@@ -30,7 +38,14 @@ Hôtel Le Pigalle<br>
 9 rue Frochot<br>
 75009 Paris<br><br>
 <!--<strong>Thématiques centrales</strong> : communauté autour d’un lieu physique. Renaissance du lien collectif. Expérience du quotidien. Rue Frochot, South Pigalle, Paris. -->
-      `
+      `,
+      rsvp_title: "RSVP",
+      rsvp_subtitle: "Merci de remplir le formulaire ci-dessous.",
+      rsvp_name: "Nom",
+      rsvp_email: "Email",
+      rsvp_guests: "Nombre d’invités",
+      rsvp_note: "Note (facultatif)",
+      rsvp_submit: "Envoyer"
     }
   };
 
