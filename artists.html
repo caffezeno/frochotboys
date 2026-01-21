@@ -20,6 +20,7 @@
   gtag('config', 'G-BXF6277RBP');
 </script>
 
+
 <body>
   <script src="lang.js"></script>
 <header class="menu" aria-label="Main navigation">
@@ -42,20 +43,126 @@
 
 
   <main>
-    <br><br>
-    <br><br>
-    <h1>COMING SOON</h1><br><br>
-    <h2>Marcelino Hooi</h2><br>
-    <div class="subtitle">
+  <main>
+  <div class="press-text">
+
+    <!-- Artist selector -->
+    <nav class="artist-nav">
+      <button class="artist-tab active" data-artist="marcelino">Marcelino Hooi</button>
+      <button class="artist-tab" data-artist="luca">Luca Spolidoro</button>
+      <button class="artist-tab" data-artist="eoghan">Eoghan Gilmore</button>
+    </nav>
+
+    <!-- Artist content -->
+    <section class="artist-content active" data-artist="marcelino">
+      <h2>Marcelino Hooi</h2>
+
       <p>
-        <a href="www.marcelinojhart.com">Marcelinojh art website</a><br>
-        <a href="www.instagram.com/marcelinojh.art">Marcelinojh art instagram</a><br>
+        <b>Marcelino Hooi</b> is a Paris based impressionist painter. He uses light and shadows as a building blocks
+        for constructing space and form in his paintings. Paintings that emphasize moments of stillness and solitude
+        in everyday city life
       </p>
-    <h2><br><br></h2>
-    <h2>Luca Spolidoro</h2><br><br>
-    <h2>Eoghan Gilmore</h2><br><br>
+
+      <p>
+        Marcelino's practices are rooted in urban observation. Watching someone smoke a
+        cigarette, walking into the metro station, or crossing the street. Scenes that no one
+        would really notice, but at the same time scenes that everyone would notice missing
+        would they cease to exist. Marcelino’s works describe
+        <u><i>the quiet</i></u> that people often miss in big cities like Paris.
+        Drawing parallels with <u><i>the sublime</i></u> as we know from romanticism.
+        As if his works are telling the viewer that the quiet is still there,
+        for those who notice.
+      </p>
+
+      <img
+        src="images/marcelino/01.jpg"
+        alt="Artwork by Marcelino Hooi"
+        class="artist-inline-image"
+        loading="lazy"
+      >
+
+      <p>
+        A key work presented within this context is
+        <i>Smoking in front of Dirty Dick</i> (2026), one of his most recent paintings.
+        The painting depicts three characters. Two of them smoking in front of a bar,
+        closed during the daytime. A third one crossing the street.
+        The distance between the viewer and the three characters makes the viewer feel
+        like they are watching the three characters from afar, almost like a voyeur.
+        The composition suggests that these three people, being at the center of the
+        painting, are also the <b>subject</b> of the painting.
+        But is that really true?
+      </p>
+
+      <p>
+        The light suggests otherwise. The way the light emphasizes the surroundings,
+        rather than the characters, reveals that the <i>real</i> subject is the place
+        these three characters find themselves. And the characters themselves?
+        They are secondary. The scene is set at eye height for the viewer, making the
+        whole ordeal feel near, inviting, enveloping the viewer <i>into</i> the scene.
+        This puts the viewer in an ambiguous position.
+        Where at first they might have felt like a <i>watcher</i>, they might now start
+        to feel like a <i>participant</i>.
+        Like they are right there, across the street, watching the three characters live
+        their life. And that at any moment, the characters could spot the viewer.
+        This realisation makes the relationship between the viewer and the characters suddenly unsettling, but also intriguing.
+      </p>
+
+      <p>
+        <u>The painting <i>Smoking in front of Dirty Dick</i> (2026) and others from the same
+        collection will be on display during <i>Les gars de Frochot</i>.
+        From the 14th of February until the 21st of February 2026 at Hotel Le Pigalle. </u>
+      </p>
+    </section>
+
+
+
+    <section class="artist-content" data-artist="luca">
+      <h2>Luca Spolidoro</h2>
+
+      <p>Coming soon</p>
+
+      <p>Coming soon</p>
+    </section>
+
+    <section class="artist-content" data-artist="eoghan">
+      <h2>Eoghan Gilmore</h2>
+
+      <p>Coming soon</p>
+
+      <p>Coming soon</p>
+    </section>
+
+
+
+  </div>
+</main>
+
+
+
 
   </main>
   <script src="lang.js"></script>
+  <script>
+  const tabs = document.querySelectorAll(".artist-tab");
+  const sections = document.querySelectorAll(".artist-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const target = tab.dataset.artist;
+
+      // Update tabs
+      tabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      // Update content
+      sections.forEach(section => {
+        section.classList.toggle(
+          "active",
+          section.dataset.artist === target
+        );
+      });
+    });
+  });
+</script>
 </body>
 </html>
