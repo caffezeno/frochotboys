@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rsvp: "RSVP",
       coming: "COMING SOON",
       intro: `
-          <u><b>Vernissage February 14th 2026</b></u><br><br>
+          <u><b>Vernissage 14.02.2026</b></u><br><br>
           Hotel le Pigalle<br>
           9 rue Frochot<br>
           75009 Paris<br><br>
