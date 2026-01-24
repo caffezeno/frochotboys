@@ -602,5 +602,18 @@ h1 {
 .artwork-tile img {
   cursor: zoom-in;
 }
+/* ---------- Press page image ---------- */
+.press-hero {
+  width: 100%;
+  max-width: 750px;   /* wider than text column */
+  margin: 40px auto 1px; /* space from menu + text */
+  padding: 0 24px;    /* aligns with site gutters */
+}
+
+.press-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
