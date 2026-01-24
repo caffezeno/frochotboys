@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rsvp: "RSVP",
       coming: "COMING SOON",
       intro: `
-          <u><b>Vernissage 14.02.2026 - 18:00</b></u><br><br>
+          <u><b>Vernissage February 14th 2026</b></u><br><br>
           Hotel le Pigalle<br>
           9 rue Frochot<br>
           75009 Paris<br><br>
@@ -24,8 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
       rsvp_submit: "Send",
       rsvp_reassurance: "You will receive a confirmation email closer to the date.",
       thanks_title: "Thank you",
-      thanks_text: "Your RSVP has been received.<br>We look forward to welcoming you.",
+      thanks_text: "Your RSVP has been received.<br><br>You will receive a confirmation email closer to the date.",
       thanks_back: "Back to home",
+      rsvp_soon: "RSVP opening soon",
         
 
 
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rsvp: "RSVP",
       coming: "BIENTÔT",
       intro: `
-        <u><b>Vernissage 14.02.2026 - 18:00</b></u><br><br>
+        <u><b>Vernissage le 14 février 2026</b></u><br><br>
         Hôtel Le Pigalle<br>
         9 rue Frochot<br>
         75009 Paris<br><br>
@@ -55,8 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
       rsvp_submit: "Envoyer",
       rsvp_reassurance: "Vous recevrez un email de confirmation à l’approche de la date.",
       thanks_title: "Merci",
-      thanks_text: "Votre inscription a bien été prise en compte.<br>Au plaisir de vous accueillir.",
+      thanks_text: "Votre inscription a bien été prise en compte.<br><br>Vous recevrez un email de confirmation à l’approche de la date.",
       thanks_back: "Retour à l’accueil",
+      rsvp_soon: "Ouverture des inscriptions prochainement",
 
 
 
